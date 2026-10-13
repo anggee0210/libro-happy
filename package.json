@@ -1,13 +1,12 @@
 {
   "name": "api22",
   "version": "1.0.0",
-  "description": "",
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch --env-file=.env src/server.js",
+    "sedd": "node --env.env-file=.env src/seed.js"
   },
   "dependencies": {
     "express": "^5.2.1",
